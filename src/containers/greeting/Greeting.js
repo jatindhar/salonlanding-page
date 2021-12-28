@@ -20,7 +20,7 @@ export default function Greeting() {
               >
                 {" "}
                 {greeting.title}{" "}
-                <span className="wave-emoji">{emoji("👋")}</span>
+                <span className="">{emoji("💇💅")}</span>
               </h1>
               <p
                 className={
@@ -33,19 +33,27 @@ export default function Greeting() {
               </p>
               <SocialMedia />
               <div className="button-greeting-div">
-                <Button text="Contact me" href="#contact" />
+                
+                <Button text="New User"
+                  newTab={true} 
+                  href="https://reactjs.org/docs/context.html" />
+                  
+                  
                 <Button
-                  text="See my resume"
+                  text="Existing User"
                   newTab={true}
                   href={greeting.resumeLink}
                 />
+                <Button text="Admin Login"
+                  newTab={true} 
+                  href="https://reactjs.org/docs/context.html" />
               </div>
             </div>
           </div>
           <div className="greeting-image-div">
             <img
               alt="saad sitting on table"
-              src={require("../../assets/images/manOnTable.svg")}
+              src={require("../../assets/images/logo3.png")}
             ></img>
           </div>
         </div>

@@ -3,11 +3,11 @@ import Headroom from "react-headroom";
 import "./Header.css";
 import ToggleSwitch from "../ToggleSwitch/ToggleSwitch";
 import StyleContext from "../../contexts/StyleContext";
-import { greeting, workExperiences } from "../../portfolio";
+import { greeting } from "../../portfolio";
 
 function Header() {
   const { isDark } = useContext(StyleContext);
-  const exp = workExperiences.viewExperiences;
+  
   return (
     <Headroom>
       <header className={isDark ? "dark-menu header" : "header"}>
@@ -26,27 +26,14 @@ function Header() {
         </label>
         <ul className={isDark ? "dark-menu menu" : "menu"}>
           <li>
-            <a href="#skills">Skills</a>
+            <a href="#skills">About Us</a>
           </li>
-          {exp === true && (
-            <li>
-              <a href="#experience">Work Experiences</a>
-            </li>
-          )}
+         
           <li>
-            <a href="#opensource">Open Source</a>
+            <a href="#achievements">Customer Reviews</a>
           </li>
           <li>
-            <a href="#achievements">Achievements</a>
-          </li>
-          <li>
-            <a href="#blogs">Blogs</a>
-          </li>
-          <li>
-            <a href="#talks">Talks</a>
-          </li>
-          <li>
-            <a href="#contact">Contact Me</a>
+            <a href="#contact">Contact Us</a>
           </li>
           <li>
             <a>
